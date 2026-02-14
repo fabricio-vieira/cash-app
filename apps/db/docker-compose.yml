@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_cash
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: cash123
+      POSTGRES_DB: db_cash
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:

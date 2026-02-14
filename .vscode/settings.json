@@ -1,0 +1,15 @@
+{
+  "material-icon-theme.folders.associations": {
+    "core": "rules",
+    "external": "tools",
+    "ui": "animation",
+    "usuario": "admin",
+    "produto": "admin",
+    "infra": "admin",
+    "service": "ci",
+    "standards": "public",
+    "adapter": "pipe",
+    "typescript-config": "config",
+    "usecase": "sublime"
+  }
+}

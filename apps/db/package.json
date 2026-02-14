@@ -1,0 +1,13 @@
+{
+  "name": "@cash-app/db",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docker compose up -d",
+    "destroy": "docker compose down -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
