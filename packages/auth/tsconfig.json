@@ -1,0 +1,3 @@
+{
+    "extends": "@cash-app/typescript-config/base.json"
+}

@@ -1,15 +1,18 @@
 {
-  "material-icon-theme.folders.associations": {
-    "core": "rules",
-    "external": "tools",
-    "ui": "animation",
-    "usuario": "admin",
-    "produto": "admin",
-    "infra": "admin",
-    "service": "ci",
-    "standards": "public",
-    "adapter": "pipe",
-    "typescript-config": "config",
-    "usecase": "sublime"
-  }
+    "code-runner.executorMap": {
+        "typescript": "npx tsx"
+    },
+    "material-icon-theme.folders.associations": {
+        "core": "rules",
+        "external": "tools",
+        "ui": "animation",
+        "usuario": "admin",
+        "produto": "admin",
+        "infra": "admin",
+        "service": "ci",
+        "standards": "public",
+        "adapter": "pipe",
+        "typescript-config": "config",
+        "usecase": "sublime"
+    }
 }
