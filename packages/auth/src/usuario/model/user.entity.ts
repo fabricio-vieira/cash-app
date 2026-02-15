@@ -27,10 +27,3 @@ export default class User extends Entity<User, UserProps> {
         this.password = trialPassword.value
     }
 }
-
-const user = new User({
-    name: 'Fabricio',
-    email: 'fabr@icio@email.com',
-    password: '$2a$12$IKDaDiwD9VahDt0piMCRPOKMN2R6p4S8kFffm8yaHt46tqtFoEi',
-})
-console.log(user)

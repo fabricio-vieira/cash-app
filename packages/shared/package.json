@@ -8,7 +8,8 @@
         "dev": "tsup src/index.ts --dts --watch"
     },
     "devDependencies": {
-        "tsup": "^8.5.1"
+        "tsup": "^8.5.1",
+        "@types/uuid": "^8.3.0"
     },
     "keywords": [],
     "author": "",
@@ -16,6 +17,6 @@
     "description": "",
     "dependencies": {
         "@cash-app/typescript-config": "*",
-        "uuid": "^13.0.0"
+        "uuid": "^8.3.2"
     }
 }

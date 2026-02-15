@@ -1,20 +1,23 @@
 {
-  "name": "@cash-app/auth",
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsup src/index.ts --dts --minify",
-    "dev": "tsup src/index.ts --dts --watch"
-  },
-  "dependencies": {
-    "@cash-app/shared": "*"
-  },
-  "devDependencies": {
-    "tsup": "^8.5.1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "name": "@cash-app/auth",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsup src/index.ts --dts --minify",
+        "dev": "tsup src/index.ts --dts --watch"
+    },
+    "dependencies": {
+        "@cash-app/shared": "*"
+    },
+    "devDependencies": {
+        "tsup": "^8.5.1",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.4.6",
+        "@types/jest": "^29.5.14"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
 }
