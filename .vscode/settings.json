@@ -14,5 +14,6 @@
         "adapter": "pipe",
         "typescript-config": "config",
         "usecase": "sublime"
-    }
+    },
+    "prisma.pinToPrisma6": true
 }

@@ -1,0 +1,9 @@
+
+POST http://localhost:4000/auth/register
+Content-Type: application/json
+
+{
+    "name": "Marco Antonio",
+    "email": "marco.antonio@email.com",
+    "password": "senha@PB1020"
+}

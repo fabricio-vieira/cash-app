@@ -11,6 +11,7 @@ export default abstract class Entity<Type, Props extends EntityProps> {
     constructor(props: Props) {
         this.id = new Id(props.id)
         this.props = { ...props, id: this.id.value }
+        console.log('entity.ok')
     }
 
     equals(entity: Entity<Type, Props>): boolean {
@@ -21,7 +22,7 @@ export default abstract class Entity<Type, Props extends EntityProps> {
         return !this.equals(entity)
     }
 
-    clone(newProps: Props, ...args: any[]): Type {
+    clone(newProps: Props, ...args: any[]): Partial<Type> {
         return new (this.constructor as any)(
             {
                 ...this.props,

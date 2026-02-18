@@ -3,6 +3,7 @@ export default class PersonName {
 
     constructor(value: string, min: number = 3, max: number = 60) {
         this.value = value
+        console.log('pname.ok')
 
         if (!value) {
             throw new Error(`name.not-provided`)

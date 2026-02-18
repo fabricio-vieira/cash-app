@@ -1,3 +1,7 @@
 {
-    "extends": "@cash-app/typescript-config/base.json"
+    "extends": "@cash-app/typescript-config/base.json",
+    "compilerOptions": {
+        "sourceMap": true,
+        "inlineSources": true
+    }
 }

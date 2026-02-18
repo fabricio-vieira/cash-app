@@ -1,10 +1,9 @@
 export default class HashPassword {
     constructor(readonly value: string) {
         if (!HashPassword.isValid(value)) {
+            console.log('hash.ok')
             throw new Error('hash-password.invalid')
         }
-
-        console.log('Hash Ok')
     }
 
     static isValid(password: string): boolean {

@@ -1,3 +1,3 @@
-export default function multiplicar(a: number, b: number) {
-    return a * b
-}
+export * from './usuario/model'
+export * from './usuario/provider'
+export * from './usuario/usecase'
