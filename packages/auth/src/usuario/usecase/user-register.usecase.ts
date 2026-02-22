@@ -20,8 +20,12 @@ export default class UserRegister implements iUseCase<Input, void> {
         const strongPasswordTrial = Result.try<StrongPassword>(
             () => new StrongPassword(input.password)
         )
+
+        const validationStrPasswTrial = Result.combine([strongPasswordTrial])
+        validationStrPasswTrial.throwIfFailed()
+
         const hashTrial = await Result.trySync(() =>
-            this.cripto.hash(strongPasswordTrial.value!.value)
+            this.cripto.hash(strongPasswordTrial.value.value)
         )
 
         const userTrial = Result.try<User>(
@@ -33,13 +37,13 @@ export default class UserRegister implements iUseCase<Input, void> {
                 })
         )
 
-        const validationResult = Result.combine([userTrial, strongPasswordTrial, hashTrial])
+        const validationResult = Result.combine([userTrial, hashTrial])
         validationResult.throwIfFailed()
 
         const user = userTrial.value
         console.log(user)
 
-        const userExists = await this.repo.findByEmail(user!.email.value)
+        const userExists = await this.repo.findByEmail(user.email.value)
 
         if (userExists) throw new Error('user.exists')
 

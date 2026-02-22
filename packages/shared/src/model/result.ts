@@ -1,3 +1,5 @@
+import DomainError from './domain-errors'
+
 export default class Result<Type> {
     constructor(
         readonly value: Type,
@@ -38,7 +40,9 @@ export default class Result<Type> {
 
     throwIfFailed(): any {
         if (this.failed) {
-            throw this.errors
+            console.log(this.errors)
+            // throw this.errors // lança array de arros
+            throw new DomainError('validation.failed', this.errors, 422) // Metodo ajustado para nest lança objeto
         }
     }
 
